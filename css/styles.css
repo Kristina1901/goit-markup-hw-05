@@ -844,13 +844,16 @@ img {
         padding-right: 24px;
         padding-left: 24px;
         background-color: var(--accent-color);
-        transform: translatey(-101%);
+        transform: translatey(141%);
         transition: transform 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
     .portfolio-link:hover .technokryak {
         transform: translatey(0);
       }
+    .portfolio-link:focus .technokryak {
+        transform: translatey(0);
+      }  
     .link-logo {
         text-decoration: none;
     }
