@@ -769,22 +769,31 @@ img {
         margin-left: auto;
         height: auto;
     }
+    .portfolio-gallery a {
+        font-family: Roboto;
+        font-size: 16px;
+        line-height: 1.875;
+        letter-spacing: 0.03em;
+        color:var(--inactive-color);
+        display: block;
+        border: 1px solid #EEEEEE;
+        text-decoration: none;
+        }
     .portfolio-list {
        display: flex;
+       padding: 0;
+       margin: 0;
        flex-wrap: wrap;
        margin-top: -30px;
        margin-left: -30px;
-      }
+       list-style: none;
+       list-style-type: none;
+       }
     .portfolio-gallery {
-       display: flex;
-       flex-basis: calc (100% / 3 - 30px);
        margin-top: 30px;
        margin-left: 30px;
-       border: 1px solid #EEEEEE;
-       width: 370px;
-       padding-bottom: 20px;
-       height: 404px;
-      }
+       flex-basis: calc((100% - (2 * 30px)) / 3);
+     }
     .portfolio-header {
             font-family: Roboto;
             font-weight: bold;
@@ -794,23 +803,13 @@ img {
             color:var(--main-color);
             margin-bottom: 4px;
              }
-    .portfolio-gallery a {
-            font-family: Roboto;
-            font-size: 16px;
-            line-height: 1.875;
-            letter-spacing: 0.03em;
-            color:var(--inactive-color);
-            text-decoration: none;
-            display: block;
-           }
     .portfolio-link {
+        width: 370px;
         box-shadow: 0;
-         width: 370px;
-        height: 404px;
         transition-property: box-shadow;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    } 
+        } 
     .portfolio-link:hover,
     .portfolio-link:focus {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -820,6 +819,7 @@ img {
       padding-left: 24px;
       padding-top: 20px;
       padding-bottom: 20px;
+      width: 370px;
     }  
     .technokryak-text {
         font-family: Roboto;
@@ -828,10 +828,11 @@ img {
         letter-spacing: 0.03em;
         color: var(--active-color);
       }  
-    .portfolio-link {
+    .portfolio-thumb {
         position: relative;
         overflow: hidden;
-       }
+        width: 370px;
+      }
     .technokryak {
         position: absolute;
         width: 100%;
